@@ -1,39 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SHOOL</title>
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="assets/css/style.css" />
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SHOOL</title>
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
+    <body>
 
-    <nav>
-        <div class="nav-wrapper teal lighten-2">
-            <div class="container">
-                <a href="index.html" class="brand-logo">
-                    <img src="assets/img/logo_grande.png" class="margin-18" width="220" alt="">
-                </a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="pages/cadastro/cadastro.html">Cadastro</a></li>
-                    <li><a href="pages/cursos/cursos.html">cursos</a></li>
-                    <li><a href="pages/sobre/sobre.html">Sobre</a></li>
-                </ul>
+        <nav>
+            <div class="nav-wrapper teal lighten-2">
+                <div class="container">
+                    <a href="index.html" class="brand-logo">
+                        <img src="assets/img/logo_grande.png" class="margin-18"
+                            width="220" alt="">
+                    </a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="pages/cadastro/cadastro.html">Cadastro</a></li>
+                        <li><a href="pages/cursos/cursos.html">cursos</a></li>
+                        <li><a href="pages/sobre/sobre.html">Sobre</a></li>
+                    </ul>
+                </div>
             </div>
+        </nav>
+
+        <div class="container">
+            <div class="d-flex justfiyFlexEnd  mt-20">
+                <div id="time" class="mr-10"></div>
+                <div id="date"></div>
+            </div>
+            <h4>Home</h4>
         </div>
-    </nav>
 
-    <div class="container">
-        <div>data e hora</div>
-
-        <h4>Home</h4>
-    </div>
-
-<!-- Compiled and minified JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-        
-</body>
+        <!-- Compiled and minified JavaScript -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="HomeController.js"></script>
+        <script src="home.js"></script>
+    </body>
 </html>

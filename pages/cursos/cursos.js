@@ -1,0 +1,1 @@
+window.cursos = new CursosController();

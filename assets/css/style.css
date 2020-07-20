@@ -1,3 +1,19 @@
 .margin-18 {
     margin-top: -18px;
 }
+
+.d-flex {
+    display: flex;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
+.justfiyFlexEnd {
+    justify-content: flex-end;
+}
