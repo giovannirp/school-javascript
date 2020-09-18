@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML5</title>
+        <script type="text/javascript">
+        window.onload = function() {
+            this.comeco();
+            this.regular();
+            const imgId = document.getElementById("imgId");
+        }
+
+        const imgs = {
+            img1: "assets/img/img1.jpg",
+            img2: "assets/img/img2.jpg",
+            img3: "assets/img/img3.jpg"
+        }
+
+        const img1 = imgs.img1;
+        const img2 = imgs.img2;
+        const img3 = imgs.img3;
+
+        const array1 = new Array (img1, img2, img3);
+
+        comeco = () => {
+            const documentLeetter = document.form.texto;
+            imgId.src = array1[0];
+            documentLeetter.value = "0";
+        }
+
+        mais = () => {
+            const documentLeetter = document.form.texto;
+            documentLeetter.value = Math.floor (1+ 1 - 2 + (documentLeetter.value) * 1 + 1);
+            if(documentLeetter.value > 2){
+                documentLeetter.value = 0;
+            }
+        }
+
+        menos = () => {
+            const documentLeetter = document.form.texto;
+            documentLeetter.value = Math.floor (1+ 1 - 2 + (documentLeetter.value) * 1 - 1)
+            if(documentLeetter.value < 0) {
+                documentLeetter.value = 2;
+            }
+        }
+
+        regular = () => {
+            const documentLeetter = document.form.texto;
+            imgId.src = array1[documentLeetter.value];
+            setTimeout("regular()", 1);
+        }        
+    </script>
+    </head>
+    <body>
+        <a id="aId"><img id="imgId"></a>
+        <br />
+        <a id="prev" onclick="menos()">Anterior</a><br /><a id="next"
+            onclick="mais()">Próximo</a>
+        <form name="form">
+            <input type="text" name="texto" hidden />
+        </form>
+
+
+    </body>
+</html>

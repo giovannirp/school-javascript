@@ -29,11 +29,32 @@
         </nav>
 
         <div class="container">
-            <div class="d-flex justfiyFlexEnd  mt-20">
+            <div class="d-flex justfiyFlexEnd mt-20">
                 <div id="time" class="mr-10"></div>
                 <div id="date"></div>
             </div>
-            <h4>Home</h4>
+            <div class="banner">
+                <a id="aId"><img id="imgId"></a>
+                <br />
+                <div class="textBanner">
+                    <a 
+                        id="prev" 
+                        onclick="menos()">
+                        Anterior
+                    </a>
+                    <a
+                        id="next"
+                        onclick="mais()"
+                    >Próximo</a>
+                    <form name="form">
+                        <input type="text" name="texto" hidden />
+                    </form>
+                </div>
+            </div>
+            <section>
+                <div class="boxs">
+                </div>
+            </section>
         </div>
 
         <!-- Compiled and minified JavaScript -->
@@ -41,5 +62,6 @@
             src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
         <script src="HomeController.js"></script>
         <script src="home.js"></script>
+        <script src="components/carrocel/banner.js"></script>
     </body>
 </html>
