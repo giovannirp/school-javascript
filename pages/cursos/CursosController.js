@@ -22,7 +22,4 @@ class CursosController {
         divLinha.innerHTML = conteudoCursos;
         return divLinha;
     }
-
-
-
 }

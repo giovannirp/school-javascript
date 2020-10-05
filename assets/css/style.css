@@ -80,3 +80,14 @@
     font-weight: bold;
     color: #4db6ac;
   }
+
+  #box {
+    display: flex;
+  }
+
+  .cardBox {
+    border:1px solid red;
+    width: 100%;
+    max-width: 33%;
+    margin-bottom: 40px;
+  }

@@ -29,3 +29,13 @@ const listaFaq = () => {
         return json;
     })
 }
+
+const listaBox = () => {
+    return fetch("http://localhost:3000/box")
+    .then(res => {
+        return res.json();
+    })
+    .then(json => {
+        return json;
+    })
+}
